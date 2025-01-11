@@ -7,7 +7,7 @@ from io import BytesIO
 
 try:
     model = pickle.load(
-        open("/mount/src/emotionanalysisproject/models/model.pkl", "rb")
+        open("/mount/src/emotionanalysisproject-main/models/model.pkl", "rb")
     )
 except Exception as e:
     st.error(f"Error loading model: {e}")
